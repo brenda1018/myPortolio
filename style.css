@@ -1,0 +1,85 @@
+
+/* nav bar */
+.navbar {
+    background-color: pink; 
+    overflow: hidden;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar a{ 
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 16x;
+    font-size: 17px;
+    text-decoration: none;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+/* h1 header*/
+
+h1{
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:rgb(0, 0, 0);
+  text-decoration: underline;
+
+}
+
+
+/* about me */
+
+h4 {
+  padding-top: 16px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:rgb(0, 0, 0)
+}
+.intro {
+  text-align: center;
+ 
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.aboutme {
+  
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: pink;
+
+}
+ /* name*/
+.aboutpage {
+  font-family: "Lucida Console", "Courier New", monospace;
+
+
+}
+.card-title {
+  background-color: pink;
+  text-align: center;
+}
+
+.card p{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 16px;
+ 
+}
+
+.card-text {
+  text-align: center;
+}
+
+/* Leadership cards */
+
