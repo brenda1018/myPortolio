@@ -56,7 +56,6 @@ h4 {
   
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  background-color: pink;
 
 }
  /* name*/
@@ -69,17 +68,28 @@ h4 {
   background-color: pink;
   text-align: center;
 }
-
-.card p{
+ /*
+.card{
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 16px;
  
 }
-
+*/
 .card-text {
-  text-align: center;
+ 
+}
+.summary {
+  border-style: double;
+  border-color: pink;
+  
 }
 
-/* Leadership cards */
+.container {
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+
+}
+ /*Leadership cards */
 

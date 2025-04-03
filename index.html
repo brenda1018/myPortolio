@@ -22,18 +22,16 @@ crossorigin="anonymous">
 <div class = "aboutpage">
   <h1>About Me</h1>
 </div>
-<div class="card">
-  <h4 class="card-title">Brenda Beltran</h4>
+<div class= "me">
+  <h4>Brenda Beltran</h4>
   <div class="aboutme">
-    <p class="card-text">My name is Brenda & I am a computer science major at SF State! My aspirations are
+    <p class="summary">My name is Brenda & I am a computer science major at SF State! My aspirations are
       to become a techincal project manager, so that both my worlds of interpersonal skills
-      and techincal skills work together.</p>
-    <a href="#" class="card-link">LinkedIn</a>
+      and techincal skills work together.<br>
+    <a href="www.linkedin.com/in/brenda-beltran-22076a1a9" 
+    class="ref">LinkedIn</a></p>
   </div>
 </div>
-
-
-
 
 
 <!--LEADERSHIP-->
@@ -47,9 +45,13 @@ crossorigin="anonymous">
   <img class="card-img-top" src="images.jpeg" alt="Card image">
   <div class="card-body">
     <h4 class="p">Advocate & Liasion</h4>
-    <p class="card-text">Supported</p>
+    <p class="card-text">* Hosted workshops on diversity and 
+      inclusion for computer science (CS) students. <br> *Founded and 
+      delivered “Encouraging Diversty in Tech”, a biweekly newsletter to disseminate
+      job opportunities and resources to CS students</p>
 
   </div>
+</div>
 </div>
 </div>
 
@@ -64,8 +66,6 @@ crossorigin="anonymous">
   </div>
 </div>
 </div>
-
-
 
 
 <!--Projects-->
@@ -80,16 +80,22 @@ crossorigin="anonymous">
   <h1> Contact Me</h1>
 </div>
 
+<div class="container">
+  <form action="action_page.php">
 
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name.."> <br>
 
+    <label for="subject">Questions?</label>
+    <textarea id="subject" name="subject" placeholder="Ask question here.." style="height:200px"></textarea>
 
+    <input type="submit" value="Submit">
 
-
-
-
-
-
+  </form>
+</div>
 
 
 
