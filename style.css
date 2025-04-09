@@ -87,5 +87,10 @@ h4 {
 
 
 }
+
+.column{
+  flex-direction:row;
+  
+}
  /*Leadership cards */
 
