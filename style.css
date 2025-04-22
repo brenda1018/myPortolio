@@ -80,6 +80,11 @@ h4 {
 .summary {
   border-style: double;
   border-color: pink;
+  padding: 2rem;           
+  margin: 0 auto;        
+  max-width: 70%;          
+  box-sizing: border-box;
+  text-align: center;
   
 }
 
@@ -139,3 +144,9 @@ h4 {
    box-sizing: border-box;
    margin-bottom: 12px;
  }
+
+ .required {
+  color: red;
+
+}
+

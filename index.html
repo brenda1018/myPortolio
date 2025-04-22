@@ -2,9 +2,14 @@
 <html>
   <head>
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="app.js"></script>
     <title>Portfolio</title>
     <link
+    
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -12,6 +17,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+ 
   </head>
 
   <!--Navigation Bar -->
@@ -32,12 +38,21 @@
       <h4>Brenda Beltran</h4>
       <div class="aboutme">
         <p class="summary">
-          My name is Brenda & I am a computer science major at SF State! My
-          aspirations are to become a techincal project manager, so that both my
-          worlds of interpersonal skills and techincal skills work together.<br />
-          <a href="www.linkedin.com/in/brenda-beltran-22076a1a9" class="ref"
-            >LinkedIn</a
-          >
+          Hi, my name is Brenda & I am a computer science major at SF State! As much as I love Computer 
+          Science, my passion really lies towards Project Management. My aspirations are to 
+          become a techincal project manager, so that both my worlds of interpersonal skills 
+          and techincal skills work together. I will be graduating this semester and continuing 
+          my journey as an intern @ SFO International Airport as a Techincal Project Manager! Connect with
+          me below! <br />
+          <a
+            href="https://www.linkedin.com/in/brenda-beltran-22076a1a9"
+            class="ref"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+>
+  <i class="fab fa-linkedin fa-lg"></i>
+</a>
+
         </p>
       </div>
     </div>
@@ -81,7 +96,7 @@
 <div class="row">
   <!-- Project 1 -->
   <div class="column">
-    <img src="sfsu.jpeg" width="250" height="250" alt="Project image" />
+    <img src="hau.jpg" width="250" height="250" alt="Project image" />
     <h4 class="p">Club Website</h4>
     <p class="card-text">
       This website was created during my 8-week mentorship program with Microsoft. We created a club website for Hermanas Unidas de SFSU, a social Latinx organization. We designed this Django application to allow club officers to create and schedule announcements to the group at large. Officers are granted admin privileges which can be additionally granted or revoked as they see fit. 
@@ -108,34 +123,34 @@
     </div>
     <div class="container">
       <form id="myForm">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="firstname" placeholder="Name..." />
+            <label for="fname"><span class="required">*</span> First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name..." />
         
-
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last name..." />
-      
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder = "example@email.com">
-  
-
-        <label for="subject">Questions?</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Ask question here..."
-          style="height: 200px"
-        ></textarea>
+            <label for="lname"><span class="required">*</span> Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name..." />
         
-
-        <input type="submit" value="Submit" />
-      </form>
+            <label for="email"><span class="required">*</span> Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" />
+        
+            <label for="subject"><span class="required">*</span> Questions?</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Ask question here..."
+              style="height: 200px"
+            ></textarea>
+        
+            <input type="submit" value="Submit" />
+          </form>
+        
+          <p
+            id="confirmationMsg"
+            style="color: rgb(232, 47, 140); font-weight: bold; display: none"
+          >
+            Form submitted!
+          </p>
+        </div>
     
-      <p id="confirmationMsg" style="color: rgb(232, 47, 140); font-weight: bold; display: none;">
-        Form submitted!
-      </p>
-    </div>
     
     
 
