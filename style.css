@@ -1,82 +1,65 @@
-
 /* nav bar */
 .navbar {
-    background-color: pink; 
-    overflow: hidden;
-    font-family: "Lucida Console", "Courier New", monospace;
+  background-color: pink; 
+  overflow: hidden;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .navbar a{ 
-    color:rgb(0, 0, 0);
-    text-align: center;
-    padding: 16x;
-    font-size: 17px;
-    text-decoration: none;
-    padding-left: 80px;
-    padding-right: 80px;
-
-
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+  font-size: 17px;
+  text-decoration: none;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .navbar a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-/* h1 header*/
+  background-color: white;
+  color: black;
+}
 
-h1{
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* h1 header */
+h1 {
   padding-top: 50px;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
-
 }
 
-
 /* about me */
-
 h4 {
   padding-top: 16px;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 .intro {
   text-align: center;
- 
   font-family: "Lucida Console", "Courier New", monospace;
-
 }
 
 .aboutme {
-  
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-
 }
- /* name*/
+
 .aboutpage {
   font-family: "Lucida Console", "Courier New", monospace;
-
-
 }
+
 .card-title {
   background-color: pink;
   text-align: center;
 }
- /*
-.card{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 16px;
-}
-*/
+
 .summary {
   border-style: double;
   border-color: pink;
@@ -85,8 +68,8 @@ h4 {
   max-width: 70%;          
   box-sizing: border-box;
   text-align: center;
-  
 }
+
 .leadership, .projects, .container {
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -104,7 +87,7 @@ h4 {
   max-width: 1200px;
 }
 
-.column{
+.column {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
@@ -118,8 +101,9 @@ h4 {
   background-color: #fff;
   border: 2px solid pink;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .card-img-top {
   width: 100%;
   height: auto;
@@ -128,25 +112,27 @@ h4 {
   border-radius: 8px;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  background-color: #FFEBEB;
+  color: #333;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
 
-
- input[type="text"],
- input[type="email"],
- textarea {
-   width: 100%;
-   padding: 12px;
-   font-size: 14px;
-   border: 2px solid pink;
-   border-radius: 8px;
-   background-color: #FFEBEB;
-   color: #333;
-   box-sizing: border-box;
-   margin-bottom: 12px;
- }
-
- .required {
+.required {
   color: red;
+}
 
+.error-message {
+  color: red;
+  font-size: 12px;
 }
 
 html {

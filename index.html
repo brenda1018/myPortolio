@@ -1,160 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="app.js"></script>
     <title>Portfolio</title>
-    <link
-    
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
- 
-  </head>
+</head>
 
-  <!--Navigation Bar -->
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
 
-  <div class="navbar">
-    <a href="#about">About Me</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact Me</a>
-  </div>
-
-  <!-- body/all info page -->
-  <body>
+    <!-- About Me Section -->
     <div id="about" class="aboutpage">
-      <h1>About Me</h1>
+        <h1>About Me</h1>
     </div>
     <div class="me">
-      <h4>Brenda Beltran</h4>
-      <div class="aboutme">
-        <p class="summary">
-          Hi, my name is Brenda & I am a computer science major at SF State! As much as I love Computer 
-          Science, my passion really lies towards Project Management. My aspirations are to 
-          become a techincal project manager, so that both my worlds of interpersonal skills 
-          and techincal skills work together. I will be graduating this semester and continuing 
-          my journey as an intern @ SFO International Airport as a Techincal Project Manager! Connect with
-          me below! <br />
-          <a
-            href="https://www.linkedin.com/in/brenda-beltran-22076a1a9"
-            class="ref"
-            target="_blank"
-            aria-label="LinkedIn Profile"
->
-  <i class="fab fa-linkedin fa-lg"></i>
-</a>
-
-        </p>
-      </div>
-    </div>
-
-    <!--LEADERSHIP-->
-
-<div id="leadership" class="leadership">
-  <h1>Leadership</h1>
-  <div class="row">
-    <div class="column">
-      <img src="images.jpeg" alt="Card image" />
-      <h4 class="p">Advocate & Liasion</h4>
-      <p class="card-text">
-        * Hosted workshops on diversity and inclusion for computer science
-        (CS) students. <br />
-        *Founded and delivered “Encouraging Diversty in Tech”, a biweekly
-        newsletter to disseminate job opportunities and resources to CS
-        students
-      </p>
-    </div>
-
-    <div class="column">
-      <img src="sfsu.jpeg" width="250" height="250" alt="Card image" />
-      <h4 class="p">Undergraduate Teaching Assistant</h4>
-      <p class="card-text">
-        * Supported weekly discussion sections of 30+ students for the Intro
-        to Programming course <br />*Engaged students one-to-one to
-        facillitate understanding of course concepts and completion of
-        projects
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- PROJECTS -->
-
-<div id="projects" class="projects">
-  <h1>Projects</h1>
-  <div class="row">
-    <!-- Project 1 -->
-    <div class="column">
-      <img src="hau.jpg" width="250" height="250" alt="hau" />
-      <h4 class="p">Club Website</h4>
-      <p class="card-text">
-        This website was created during my 8-week mentorship program with Microsoft. We created a club website for Hermanas Unidas de SFSU, a social Latinx organization. We designed this Django application to allow club officers to create and schedule announcements to the group at large. Officers are granted admin privileges which can be additionally granted or revoked as they see fit. 
-        Follow the link above or visit it here: 
-        <a href="https://brendabeltran.me/club-website" target="_blank">Club Website</a>
-      </p>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="column">
-      <img src="sfsu.jpeg" width="250" height="250" alt="senior project" />
-      <h4 class="p">Job Platform</h4>
-      <p class="card-text">
-        This application was developed during the fall semester as part of an academic project. It is a full-stack application built with React.js, Express.js, and Node.js. It facilitates employment connections between employers and job seekers. The goal was to establish a user-friendly platform that speeds up the hiring process by advancing interactions between job seekers and employers. The application offers two different sign-in methods fit to the user's role, which strengthens the overall accessibility and functionality of the platform.
-        Follow the application URL above or visit our GitHub repo here: 
-        <a href="https://github.com/CSC-648-SFSU/csc648-01-fall23-team03" target="_blank">GitHub Repo</a>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-    <!--Contact me-->
-    <div id="contact" class="contact">
-      <h1>Contact Me</h1>
-    </div>
-    <div class="container">
-      <form id="myForm">
-            <label for="fname"><span class="required">*</span> First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Name..." />
-        
-            <label for="lname"><span class="required">*</span> Last Name:</label>
-            <input type="text" id="lname" name="lastname" placeholder="Last name..." />
-        
-            <label for="email"><span class="required">*</span> Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" />
-        
-            <label for="subject"><span class="required">*</span> Questions?</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Ask question here..."
-              style="height: 200px"
-            ></textarea>
-        
-            <input type="submit" value="Submit" />
-          </form>
-        
-          <p
-            id="confirmationMsg"
-            style="color: rgb(232, 47, 140); font-weight: bold; display: none"
-          >
-            Form submitted!
-          </p>
+        <h4>Brenda Beltran</h4>
+        <div class="aboutme">
+            <p class="summary">
+                Hi, my name is Brenda & I am a computer science major at SF State! As much as I love Computer 
+                Science, my passion really lies towards Project Management. My aspirations are to 
+                become a technical project manager, so that both my worlds of interpersonal skills 
+                and technical skills work together. I will be graduating this semester and continuing 
+                my journey as an intern @ SFO International Airport as a Technical Project Manager! Connect with
+                me below! <br />
+                <a
+                    href="https://www.linkedin.com/in/brenda-beltran-22076a1a9"
+                    class="ref"
+                    target="_blank"
+                    aria-label="LinkedIn Profile"
+                >
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+            </p>
         </div>
-    
-    
-    
+    </div>
 
+    <!-- Leadership Section -->
+    <div id="leadership" class="leadership">
+        <h1>Leadership</h1>
+        <div class="row">
+            <div class="column">
+                <img src="images.jpeg" alt="Card image" />
+                <h4 class="p">Advocate & Liaison</h4>
+                <p class="card-text">
+                    * Hosted workshops on diversity and inclusion for computer science (CS) students. <br />
+                    * Founded and delivered “Encouraging Diversity in Tech”, a biweekly newsletter to disseminate job opportunities and resources to CS students.
+                </p>
+            </div>
 
+            <div class="column">
+                <img src="sfsu.jpeg" width="250" height="250" alt="Card image" />
+                <h4 class="p">Undergraduate Teaching Assistant</h4>
+                <p class="card-text">
+                    * Supported weekly discussion sections of 30+ students for the Intro to Programming course <br />
+                    * Engaged students one-to-one to facilitate understanding of course concepts and completion of projects.
+                </p>
+            </div>
+        </div>
+    </div>
 
-  </body>
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="column">
+                <img src="hau.jpg" width="250" height="250" alt="hau" />
+                <h4 class="p">Club Website</h4>
+                <p class="card-text">
+                    This website was created during my 8-week mentorship program with Microsoft. We created a club website for Hermanas Unidas de SFSU, a social Latinx organization. We designed this Django application to allow club officers to create and schedule announcements to the group at large. Officers are granted admin privileges which can be additionally granted or revoked as they see fit.
+                    Follow the link above or visit it here: 
+                    <a href="https://brendabeltran.me/club-website" target="_blank">Club Website</a>
+                </p>
+            </div>
+
+            <div class="column">
+                <img src="sfsu.jpeg" width="250" height="250" alt="senior project" />
+                <h4 class="p">Job Platform</h4>
+                <p class="card-text">
+                    This application was developed during the fall semester as part of an academic project. It is a full-stack application built with React.js, Express.js, and Node.js. It facilitates employment connections between employers and job seekers. The goal was to establish a user-friendly platform that speeds up the hiring process by advancing interactions between job seekers and employers. The application offers two different sign-in methods fit to the user's role, which strengthens the overall accessibility and functionality of the platform.
+                    Follow the application URL above or visit our GitHub repo here: 
+                    <a href="https://github.com/CSC-648-SFSU/csc648-01-fall23-team03" target="_blank">GitHub Repo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div id="contact" class="contact">
+        <h1>Contact Me</h1>
+    </div>
+
+    <div class="container">
+        <form id="myForm">
+            <label for="fname"><span class="required">*</span> First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name..." oninput="validateInput(this)" />
+            <div class="error-message" id="fname-error"></div>
+
+            <label for="lname"><span class="required">*</span> Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name..." oninput="validateInput(this)" />
+            <div class="error-message" id="lname-error"></div>
+
+            <label for="email"><span class="required">*</span> Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" oninput="validateInput(this)" />
+            <div class="error-message" id="email-error"></div>
+
+            <label for="subject"><span class="required">*</span> Questions?</label>
+            <textarea id="subject" name="subject" placeholder="Ask question here..." style="height: 200px" oninput="validateInput(this)"></textarea>
+            <div class="error-message" id="subject-error"></div>
+
+            <input type="submit" value="Submit" />
+        </form>
+
+        <p id="confirmationMsg" style="color: rgb(232, 47, 140); font-weight: bold; display: none">
+            Form submitted!
+        </p>
+    </div>
+
+</body>
 </html>
