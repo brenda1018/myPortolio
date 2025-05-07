@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (valid) {
       msg.style.display = "block";
       msg.style.color = "green";
-      msg.textContent = "Form Submitted Successfully!";
+    
       alert("Form submitted successfully.");
       form.reset();
     } else {
