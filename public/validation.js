@@ -46,3 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// make sure the email field reads an email
