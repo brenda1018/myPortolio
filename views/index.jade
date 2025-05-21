@@ -83,7 +83,7 @@ html(lang="en")
       h1 Contact Me
 
     .container
-      form#myForm
+      form#myForm(action="/submit-form", method="POST")
         label(for="fname")
           span.required * 
           | First Name:
