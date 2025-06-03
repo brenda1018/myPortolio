@@ -1,0 +1,23 @@
+{
+  "name": "myportolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenda1018/myPortolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenda1018/myPortolio/issues"
+  },
+  "homepage": "https://github.com/brenda1018/myPortolio#readme",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.15.1"
+  }
+}
