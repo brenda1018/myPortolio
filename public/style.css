@@ -1,14 +1,17 @@
 /* nav bar */
 .navbar {
+  display: flex;
   background-color: pink; 
   overflow: hidden;
+  justify-content: center;
   font-family: "Lucida Console", "Courier New", monospace;
+  padding: 20px 0;
 }
 
 .navbar a{ 
   color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 16px;
+  text-align: right;
+  padding: 20px 40px;
   font-size: 17px;
   text-decoration: none;
   padding-left: 80px;
