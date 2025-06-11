@@ -81,12 +81,12 @@ h4 {
 .aboutme {
   border: 2px solid pink;
   border-radius: 12px;
-  background-color: #fff0f5;  /* subtle light pink */
+  background-color: #fff0f5;  
   padding: 20px 30px;
   margin: 40px auto;
   max-width: 1200px;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(255, 192, 203, 0.3); /* subtle pink shadow */
+  box-shadow: 0 2px 8px rgba(255, 192, 203, 0.3); 
 }
 
 .container {
