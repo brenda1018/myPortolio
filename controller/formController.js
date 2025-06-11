@@ -1,32 +1,74 @@
-import form from '../models/form.js'; 
-export async function handleFormSubmit(req, res) {
+import form from '../models/form.js';
+
+class FormController {
+  async handleFormSubmit(req, res) {
     try {
-      console.log('Received form data:', req.body);
-  
       const { firstname, lastname, email, subject } = req.body;
-  
-      // validate
+
       if (!firstname || !lastname || !email) {
         return res.status(400).send('Missing required fields.');
       }
-      
-      const formEntry = new form({
+
+      const existingEntry = await form.findOne({ email });
+
+      if (existingEntry) {
+        existingEntry.name = firstname;
+        existingEntry.lname = lastname;
+        existingEntry.comment = subject;
+        await existingEntry.save();
+        return res.status(200).json({
+          success: true,
+          message: "Successfully" });
+        }
+
+      const newEntry = new form({
         name: firstname,
         lname: lastname,
-        email: email,
+        email,
         comment: subject,
       });
+    
+      await newEntry.save();
+      return res.status(200).json({
+        success: true,
+        message: "Successfully" });
 
-      await formEntry.save();
 
-      // mongo should save this
-  
-      res.status(200).send('Form submitted successfully!');
+
     } catch (error) {
       console.error('Error in form submission:', error);
       res.status(500).send('Server error');
     }
   }
+
+  async updateFormByEmail(req, res) {
+    try {
+      const { email, firstname, lastname, subject } = req.body;
+
+      if (!email) {
+        return res.status(400).send('Email is required for update.');
+      }
+
+      const updated = await form.findOneAndUpdate(
+        { email },
+        { $set: { name: firstname, lname: lastname, comment: subject } },
+        { new: true }
+      );
+
+      if (!updated) {
+        return res.status(404).send('No entry found!');
+      }
+
+      res.status(200).json({ message: 'Update Success', data: updated });
+    } catch (error) {
+      console.error('Error updating form:', error);
+      res.status(500).send('Server error');
+    }
+  }
+}
+
+const formController = new FormController();
+export default formController;
 
 
   // import the model now, add query to grab line 6, 
